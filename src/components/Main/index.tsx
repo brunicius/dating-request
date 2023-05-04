@@ -95,7 +95,7 @@ const Main: FC = () => {
     playLevelUp()
     setTimeout(() => {
       playStageClear()
-    }, 1200)
+    }, 800)
   }
 
   return (
