@@ -1,9 +1,8 @@
-import { Icon } from "@mui/material"
 import { FC } from "react"
 
 import * as S from "./styles"
 
-const LoveIcon = () => <Icon fontSize="large">favorite</Icon>
+const LoveIcon = () => <S.RgbIcon>favorite</S.RgbIcon>
 
 const Header: FC = () => {
   return (

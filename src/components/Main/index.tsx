@@ -112,7 +112,7 @@ const Main: FC = () => {
       <S.Modal open={acceptedModalOpen} onClose={handleCloseModal} sx={{}}>
         <Fade in={acceptedModalOpen}>
           <S.ModalContainer>
-            <Icon sx={{ fontSize: 32, color: "aqua" }}>celebration</Icon>
+            <Icon sx={{ fontSize: 32 }}>celebration</Icon>
             <Typography sx={{ marginLeft: 4 }} variant="h5">
               Estamos namorando!
             </Typography>
