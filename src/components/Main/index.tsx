@@ -9,6 +9,7 @@ import * as S from "./styles"
 
 import levelUp from "../../assets/mp3/smb_1-up.mp3"
 import stageClear from "../../assets/mp3/smb_stage_clear.mp3"
+import { RgbText } from "../Header/styles"
 
 const DateRequest = () => {
   const requestedName = useMemo(
@@ -19,11 +20,14 @@ const DateRequest = () => {
   return (
     <>
       {requestedName && (
-        <Typography color="primary" variant="h4">
+        <RgbText color="primary" variant="h4">
           {requestedName}
-        </Typography>
+        </RgbText>
       )}
       <Typography variant="h4">Quer namorar comigo?</Typography>
+      <Typography variant="overline" fontSize={14}>
+        Impossível de Recusar
+      </Typography>
     </>
   )
 }
@@ -108,7 +112,7 @@ const Main: FC = () => {
       <S.Modal open={acceptedModalOpen} onClose={handleCloseModal} sx={{}}>
         <Fade in={acceptedModalOpen}>
           <S.ModalContainer>
-            <Icon>celebration</Icon>
+            <Icon sx={{ fontSize: 32, color: "aqua" }}>celebration</Icon>
             <Typography sx={{ marginLeft: 4 }} variant="h5">
               Estamos namorando!
             </Typography>
